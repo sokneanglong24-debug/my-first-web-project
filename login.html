@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style_indext2.css">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="icon" href="./img-media/ico.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Khmer&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/declarativeToggle.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headermenu clear">
+            <nav class="navbar clear">
+                <img src="./image_form/ logo_sabynew.png" alt="">
+                <input type="text" name="search" class="mysearchbar" size="20" placeholder="sear web...">
+                <input type="submit" value="search" size="2.5" class="mysearchbutton">
+                <ul class="mymenu">
+                    <li class="drop">
+                        <a href="javascript:void(0)" class="active">Menu</a>
+                        <div class="drop-content">
+                            <a href="indext.html">Home</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="media.html">Media</a>
+                            <a href="signup.html">Signup</a>
+                            <a href="login.html">Login</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="about.html">About</a>
+                        </div>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="drop">
+                        <a href="javascript:void(0)">Media</a>
+                        <div class="drop-content">
+                            <a href="indext.html">Video</a>
+                            <a href="blog.html">Audio</a>
+                            <a href="media.html">Photos</a>
+                            <a href="signup.html">Slides</a>
+                        </div>
+                    </li>
+                    <li><a href="signup.html">Signup</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <span data-toggle-target=".navbar" class="toggle-btn">
+                <i style="font-size: 25px;cursor: pointer;" class="fa-solid fa-bars"></i>
+            </span>
+        </div>
+    </header>
+    <div class="site-container">
+        <div class="login-header">
+            <h1>Login</h1>
+        </div>
+        <div class="welcome">
+            <form id="loginform" action="media.html" method="POST">
+                <h2>sign in</h2>
+                <div class="row">
+                    <p>
+                        <label for="email">Your Email</label>
+                        <input id="loginemail" type="email" name="email" placeholder="example@gmail.com"
+                            required="required">
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input id="loginpass" type="password" name="password" placeholder="**********"
+                            required="required">
+
+                    </p>
+                    <p class="keeplogin">
+                        <input type="checkbox" name="keep" id="keep" value="keep">
+                        <label for="keep">Keep me login</label>
+                    </p>
+                    <p class="recoverpassword">
+                        <a href="#recoverpassword">forgot password</a>
+                    </p>
+                    <input type="submit" value="login">
+                    <p class="join">
+                        <label for="new_member">Not yet a member</label>
+                        <a href="signup.html">Resgister</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="button-site">
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.message.com">Message</a>
+            <a href="https://www.youtube.com">Youtube</a>
+            <p class="copyright">&copy;2020 Ejike is sok neang@coder academy</p>
+        </div>
+    </footer>
+</body>
+
+</html>

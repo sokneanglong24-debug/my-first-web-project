@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Fron End Web Developer" content="COmplete Website Design">
+    <meta name="keywords" content="HTML, CSS, Fron End">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style_indext2.css">
+    <link rel="stylesheet" href="./popup.css">
+    <link rel="icon" href="./img-media/ico.svg">
+    <!-- font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Khmer&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="frontend.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/declarativeToggle.js"></script>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="headermenu clear">
+            <nav class="navbar clear">
+                <img src="./image_form/ logo_sabynew.png" alt="">
+                <input type="text" name="search" class="mysearchbar" size="20" placeholder="sear web...">
+                <input type="submit" value="search" size="2.5" class="mysearchbutton">
+                <ul class="mymenu">
+                    <li class="drop">
+                        <a href="javascript:void(0)" class="active">Menu</a>
+                        <div class="drop-content">
+                            <a href="indext.html">Home</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="media.html">Media</a>
+                            <a href="signup.html">Signup</a>
+                            <a href="login.html">Login</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="about.html">About</a>
+                        </div>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="drop">
+                        <a href="javascript:void(0)">Media</a>
+                        <div class="drop-content">
+                            <a href="indext.html">Video</a>
+                            <a href="blog.html">Audio</a>
+                            <a href="media.html">Photos</a>
+                            <a href="signup.html">Slides</a>
+                        </div>
+                    </li>
+                    <li><a href="signup.html">Signup</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+
+            </nav>
+            <span data-toggle-target=".navbar" class="toggle-btn">
+                <i style="font-size: 25px;cursor: pointer;" class="fa-solid fa-bars"></i>
+            </span>
+        </div>
+    </header>
+    <div class="site-container">
+        <div class="top-site">
+            <h1>Front-End Developer</h1>
+            <h2>We build awesome designds.....join us today!</h2>
+            <img src="./image_form/first-s.jpeg" alt="front end header picture " class=" green-earth">
+        </div>
+        <div class="middle-site">
+            <div class="first-middle-site">
+                <img src="./image_form/sticker.webp" alt="peace develop Front-End">
+                <h2>peaceful Developer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non earum repudiandae eius nihil cum ex quia
+                    cupiditate, quibusdam, voluptatibus vitae, iure adipisci sequi ullam ea esse quos dolores pariatur.
+                    Animi.</p>
+            </div>
+            <hr>
+            <div class="second-middle-site">
+                <h2>Our Services</h2>
+                <div class="our-service">
+                    <img src="./image_form/our-service.jpeg" class="service-1-img" alt="service-1">
+                    <h3>WebDeveloper</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo aut similique voluptas qui
+                        nihil praesentium, error quas architecto aliquid quia cumque accusamus nisi possimus ad pariatur
+                        iste vel ipsam?</p>
+                </div>
+
+                <div class="our-service">
+                    <img src="./image_form/service2.jpeg" class="service-2-img" alt="service-2">
+                    <h3>Network</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum consequatur ipsa quod obcaecati
+                        voluptatem quo quisquam hic velit reprehenderit! Sequi assumenda ut cum? Eum enim dolorem vel,
+                        iusto voluptatibus eius.</p>
+                </div>
+                <hr>
+            </div>
+            <div class="third-middle-site">
+                <h2>Need Our Services?</h2>
+                <h3>Hit the contact box and drop us a message</h3>
+                <p class="contact-message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsam
+                    sapiente assumenda rerum nesciunt maiores a, cumque animi, minus, sint incidunt perspiciatis! Eos
+                    vel ratione neque modi voluptates repudiandae incidunt?</p>
+                <!-- <a class="mybutton" href="sokneanglong24@gmail.com">Contact Us</a> -->
+            </div>
+        </div>
+
+        <!-- lavering the power of javascrit -->
+        <div class="mypop">
+            <div id="messagebox">
+                <!-- starting box popup -->
+                <div id="popupContact">
+                    <!-- contact form -->
+                    <form action="#" id="form" method="POST" name="form">
+                        <img src="./image_form/icon-form-login.png" id="close" onclick="close_form()">
+                        <h2>Contact Us</h2>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                        <textarea name="message" id="msg" placeholder="message"></textarea>
+                        <a href="javascript:input_fields()" id="submit">Send Message</a>
+                    </form>
+                </div>
+                <!-- this is end of popup form -->
+            </div>
+            <a class="mybutton" id="popup" onclick="show_form()">Contact Us</a>
+            <!-- this is the end of popmessage -->
+        </div>
+        <footer>
+            <div class="button-site">
+                <a href="https://www.facebook.com">Facebook</a>
+                <a href="https://www.message.com">Message</a>
+                <a href="https://www.youtube.com">Youtube</a>
+                <p class="copyright">&copy;2020 Ejike is sok neang@coder academy</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
